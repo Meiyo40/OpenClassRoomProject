@@ -14,3 +14,6 @@ git show #SHA // permet d'afficher le diff & l'auteur d'un commit précis
 ls //Commande bash liste les fichiers présent dans le repertoire courant
 mkdir // Commande bash permet la création d'un repertoire du fichier courant ou ailleurs par un chemin relatif ou absolu
 cd //Permet de se positionner dans les différents fichier en utilisant leurs localisation exemple C:\dev\openclassroom
+
+***Comment ignorer des fichiers***
+il faut créer un dossier .gitignore et y ajouter le nom du fichier (Avec chemin absolu ou relatif)devant être ignoré.
