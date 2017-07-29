@@ -17,3 +17,5 @@ cd //Permet de se positionner dans les différents fichier en utilisant leurs lo
 
 ***Comment ignorer des fichiers***
 il faut créer un dossier .gitignore et y ajouter le nom du fichier (Avec chemin absolu ou relatif)devant être ignoré.
+***Sauvegardé une modification sans commit***
+Il faut utiliser la commande git stash, puis pour reprendre les modifications en cours git stash pop (vérifiable avec git status)
