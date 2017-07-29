@@ -1,10 +1,21 @@
-git push  //Upload le dernier commit, doit préciser la remote (origin par convention pour github) et la branche de dev en argument ex: git push origin master
-git pull //Permet de télécharger la dernière mise à jour(dernier commit) du repertoire distant, utilisation des arguments similaire a la commande push, ex git pull origin master
-git add // permet d'ajouter un nouveau fichier/rep à l'index pour l'ajouter au prochain commit
-git clone //Permet de télécharger l'intrégralité d'un repertoire git en utilisant l'adresse de ce dernier disponible sur github par exemple
-git commit -am/m "Text" // Permet de valider un commit suite à un ajout avant de l'uploader en laissant un message (argument -m), possibilité d'ajout avec (-a)
-git status //vérifie si les fichiers locaux sont à jour (et ajouté à l'index) où si un commit est nécessaire
-git log //Donne une liste des commits courant et précédant sur le répertoire en cours
-ls //Commande bash liste les fichiers présent dans le repertoire courant
-mkdir // Commande bash permet la création d'un repertoire du fichier courant ou ailleurs par un chemin relatif ou absolu
-cd //Permet de se positionner dans les différents fichier en utilisant leurs localisation exemple C:\dev\openclassroom
+git push  //Upload le dernier commit, doit prÃ©ciser la remote (origin par convention pour github) et la branche de dev en argument ex: git push origin master
+git pull //Permet de tÃ©lÃ©charger la derniÃ¨re mise Ã  jour(dernier commit) du repertoire distant, utilisation des arguments similaire a la commande push, ex git pull origin master
+git add // permet d'ajouter un nouveau fichier/rep Ã  l'index pour l'ajouter au prochain commit
+git clone //Permet de tÃ©lÃ©charger l'intrÃ©gralitÃ© d'un repertoire git en utilisant l'adresse de ce dernier disponible sur github par exemple
+git commit -am/m "Text" // Permet de valider un commit suite Ã  un ajout avant de l'uploader en laissant un message (argument -m), possibilitÃ© d'ajout + message avec (-am)
+git status //vÃ©rifie si les fichiers locaux sont Ã  jour (et ajoutÃ© Ã  l'index) oÃ¹ si un commit est nÃ©cessaire
+git log //Donne une liste des commits courant et prÃ©cÃ©dant sur le rÃ©pertoire en cours
+git checkout #Sha||#BranchName //Permet de reprendre un commit antÃ©rieur grÃ¢ce au code sha obtenu avec gitlog, permet Ã©galement de changer de branche
+git branch // Permet de connaÃ®tre la branche actuelle, de lister les branches existante et d'en crÃ©er le cas Ã©chÃ©ant
+git init // initialise le repertoire git pour ajouter & crÃ©er des commits.
+git merge // Permet de fusionner 2 branches pour en avoir qu'une
+git blame //Permet d'afficher les ID et les modifications des commits sur un fichier particulier
+git show #SHA // permet d'afficher le diff & l'auteur d'un commit prÃ©cis
+ls //Commande bash liste les fichiers prÃ©sent dans le repertoire courant
+mkdir // Commande bash permet la crÃ©ation d'un repertoire du fichier courant ou ailleurs par un chemin relatif ou absolu
+cd //Permet de se positionner dans les diffÃ©rents fichier en utilisant leurs localisation exemple C:\dev\openclassroom
+
+***Comment ignorer des fichiers***
+il faut crÃ©er un dossier .gitignore et y ajouter le nom du fichier (Avec chemin absolu ou relatif)devant Ãªtre ignorÃ©.
+***SauvegardÃ© une modification sans commit***
+Il faut utiliser la commande git stash, puis pour reprendre les modifications en cours git stash pop (vÃ©rifiable avec git status)
