@@ -9,6 +9,7 @@ git checkout #Sha||#BranchName //Permet de reprendre un commit antérieur grâce
 git branch // Permet de connaître la branche actuelle, de lister les branches existante et d'en créer le cas échéant
 git init // initialise le repertoire git pour ajouter & créer des commits.
 git merge // Permet de fusionner 2 branches pour en avoir qu'une
+git blame //Permet d'afficher les ID et les modifications des commits sur un fichier particulier
 ls //Commande bash liste les fichiers présent dans le repertoire courant
 mkdir // Commande bash permet la création d'un repertoire du fichier courant ou ailleurs par un chemin relatif ou absolu
 cd //Permet de se positionner dans les différents fichier en utilisant leurs localisation exemple C:\dev\openclassroom
